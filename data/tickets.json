@@ -1,0 +1,122 @@
+[
+  {
+    "id": "TK-1042",
+    "employee": "R. Verma",
+    "issue": "VPN credential expired",
+    "category": "Network & Access",
+    "status": "Resolved (closed)",
+    "is_active": false,
+    "assigned_team": "IT Support",
+    "priority": "Medium",
+    "source_policy": "KB-02",
+    "escalation_reason": "Direct resolution - credential renewal guidance provided"
+  },
+  {
+    "id": "TK-1043",
+    "employee": "S. Iyer",
+    "issue": "Laptop replacement (3.2 yrs old)",
+    "category": "Hardware & Devices",
+    "status": "Approved — pending fulfillment (active)",
+    "is_active": true,
+    "assigned_team": "IT Support",
+    "priority": "Medium",
+    "source_policy": "KB-03",
+    "escalation_reason": "Eligible after 3 years service"
+  },
+  {
+    "id": "TK-1044",
+    "employee": "A. Khan",
+    "issue": "Non-catalog software request",
+    "category": "Software & Applications",
+    "status": "Pending Security review (active)",
+    "is_active": true,
+    "assigned_team": "IT Security",
+    "priority": "Medium",
+    "source_policy": "KB-04",
+    "escalation_reason": "Non-catalog software installation requires IT Security review (3-5 business days)"
+  },
+  {
+    "id": "TK-1045",
+    "employee": "P. Joshi",
+    "issue": "Mailbox quota increase",
+    "category": "Email & Collaboration",
+    "status": "Approved at 35GB (closed)",
+    "is_active": false,
+    "assigned_team": "IT Support / Manager",
+    "priority": "Low",
+    "source_policy": "KB-06",
+    "escalation_reason": "Manager approved increase to 35GB (within max 50GB limit)"
+  },
+  {
+    "id": "TK-1046",
+    "employee": "M. Das",
+    "issue": "Printer paper jam, floor 2",
+    "category": "Hardware & Peripherals",
+    "status": "Resolved (closed)",
+    "is_active": false,
+    "assigned_team": "IT Support",
+    "priority": "Low",
+    "source_policy": "KB-05",
+    "escalation_reason": "Troubleshooting completed & queue reset"
+  },
+  {
+    "id": "TK-1047",
+    "employee": "K. Singh",
+    "issue": "Home office equipment request",
+    "category": "Hardware & Remote Work",
+    "status": "Pending Finance (active)",
+    "is_active": true,
+    "assigned_team": "Finance",
+    "priority": "Medium",
+    "source_policy": "KB-10",
+    "escalation_reason": "Requires manager sign-off and Finance processing prior to IT shipping"
+  },
+  {
+    "id": "TK-1048",
+    "employee": "T. Rao",
+    "issue": "Phishing email reported",
+    "category": "Security & Incident Response",
+    "status": "Escalated to Security — under investigation (active)",
+    "is_active": true,
+    "assigned_team": "IT Security",
+    "priority": "Critical",
+    "source_policy": "KB-09",
+    "escalation_reason": "Suspected phishing email reported directly to security@veridian-corp.example"
+  },
+  {
+    "id": "TK-1049",
+    "employee": "V. Nambiar",
+    "issue": "Password reset",
+    "category": "Identity & Access",
+    "status": "Resolved (closed)",
+    "is_active": false,
+    "assigned_team": "IT Support",
+    "priority": "Low",
+    "source_policy": "KB-01",
+    "escalation_reason": "Self-service reset completed"
+  },
+  {
+    "id": "TK-1050",
+    "employee": "J. Fernandes",
+    "issue": "Admin access request",
+    "category": "Identity & Access",
+    "status": "Rejected — no business justification provided (closed)",
+    "is_active": false,
+    "assigned_team": "Human Review",
+    "priority": "High",
+    "source_policy": "Human Review Required",
+    "escalation_reason": "Unauthorized access request; knowledge base does not specify authorization"
+  },
+  {
+    "id": "TK-1051",
+    "employee": "L. Menon",
+    "issue": "Guest Wi-Fi issued",
+    "category": "Network & Access",
+    "status": "Resolved (closed)",
+    "is_active": false,
+    "assigned_team": "Self-Service",
+    "priority": "Low",
+    "source_policy": "KB-07",
+    "escalation_reason": "Generated at front-desk kiosk (valid 24h)"
+  }
+]

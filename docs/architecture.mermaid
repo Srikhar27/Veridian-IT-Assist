@@ -1,0 +1,38 @@
+graph TD
+    A[Employee Request / Chat Input] --> B[IT Agent Service Orchestrator]
+    
+    subgraph Data & Grounding Layer
+        C[Policy Knowledge Base KB-01 to KB-10 & Asset Policy]
+        D[Historical & Active Tickets Queue TK-1042+]
+    end
+
+    subgraph Hybrid Decision Engine
+        B --> E[LLM / Deterministic NLU Parser]
+        B --> F[Policy Retriever & Grounding Matcher]
+        B --> G[Ticket Context & Precedent Matcher]
+        
+        E --> H[Rule Engine & Escalation Validator]
+        F --> H
+        G --> H
+    end
+
+    subgraph Action & Persistence Layer
+        H --> I{Decision Type}
+        I -->|Direct Resolve / Guidance| J[Grounded Response Generator]
+        I -->|Needs Follow-up / Clarification| J
+        I -->|Escalate / Require Approval| K[Auto Ticket Generator AUTO-1001+]
+        I -->|Human Review Required| K
+        
+        K --> J
+        J --> L[Audit Logger & SQLite Persistence]
+    end
+
+    subgraph Streamlit Web Dashboard
+        L --> M[Overview Dashboard Metrics & Charts]
+        L --> N[AI Support Chat UI]
+        L --> O[Employee Requests Table REQ-01..15]
+        L --> P[Ticket Queue Manager]
+        L --> Q[Knowledge Base Browser]
+        L --> R[Audit Trail Explorer]
+        L --> S[Agent Decision Trace Inspector]
+    end

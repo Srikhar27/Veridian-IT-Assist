@@ -1,0 +1,108 @@
+[
+  {
+    "id": "KB-01",
+    "title": "Password Reset",
+    "category": "Identity & Access",
+    "description": "Employees can reset their own password through the self-service portal at any time. If locked out after 5 failed attempts, contact IT to unlock the account manually. No approval required.",
+    "allowed_actions": ["Self-service reset", "Manual IT unlock"],
+    "approval_required": "None",
+    "max_failed_attempts": 5
+  },
+  {
+    "id": "KB-02",
+    "title": "VPN Access",
+    "category": "Network & Access",
+    "description": "VPN access is granted automatically to all full-time employees. Contractors require manager approval submitted through the access request form. VPN credentials expire every 90 days and must be renewed by the employee.",
+    "allowed_actions": ["Automatic access for FTE", "Credential renewal by employee", "Contractor request with manager approval"],
+    "approval_required": "Manager approval required for contractors",
+    "credential_expiry_days": 90
+  },
+  {
+    "id": "KB-03",
+    "title": "Laptop Replacement",
+    "category": "Hardware & Devices",
+    "description": "Laptops are eligible for replacement after 3 years of service, or earlier in case of verified hardware failure. Requests must be raised at least 2 weeks in advance of intended replacement.",
+    "allowed_actions": ["Replacement after 3 years service", "Replacement on verified hardware failure"],
+    "notice_period_weeks": 2,
+    "approval_required": "IT Diagnosis / Hardware Verification"
+  },
+  {
+    "id": "KB-04",
+    "title": "Software Installation Requests",
+    "category": "Software & Applications",
+    "description": "Standard software listed in the approved catalog can be self-installed. Non-catalog software requires IT Security review. Security review takes 3–5 business days.",
+    "allowed_actions": ["Self-install catalog software", "Route non-catalog to IT Security review"],
+    "review_time_days": "3-5 business days",
+    "approval_required": "IT Security review for non-catalog software"
+  },
+  {
+    "id": "KB-05",
+    "title": "Printer Troubleshooting",
+    "category": "Hardware & Peripherals",
+    "description": "For printer issues: 1. Check the printer queue. 2. Restart the print spooler. 3. If the issue persists, log a ticket with the printer asset tag.",
+    "troubleshooting_steps": [
+      "Check the printer queue",
+      "Restart the print spooler",
+      "Log ticket with printer asset tag if issue persists"
+    ],
+    "approval_required": "None"
+  },
+  {
+    "id": "KB-06",
+    "title": "Email Mailbox Quota",
+    "category": "Email & Collaboration",
+    "description": "Default mailbox quota is 25GB. Employees nearing quota should archive old mail. Quota increases beyond 25GB require manager approval. Maximum quota is 50GB.",
+    "default_quota_gb": 25,
+    "max_quota_gb": 50,
+    "recommended_action": "Archive old mail",
+    "approval_required": "Manager approval required for quota increases beyond 25GB"
+  },
+  {
+    "id": "KB-07",
+    "title": "Guest Wi-Fi Access",
+    "category": "Network & Access",
+    "description": "Guest Wi-Fi credentials are valid for 24 hours. Any employee can generate credentials from the front-desk kiosk. No IT ticket required.",
+    "validity_hours": 24,
+    "generation_location": "Front-desk kiosk",
+    "approval_required": "None",
+    "ticket_required": false
+  },
+  {
+    "id": "KB-08",
+    "title": "Expense Software Access",
+    "category": "Software & Finance Tools",
+    "description": "Access to the expense management tool is granted by Finance, not IT. IT can only assist with login or technical issues once an account already exists.",
+    "access_grantor": "Finance",
+    "it_scope": "Login or technical assistance for existing accounts only",
+    "approval_required": "Finance approval for new access"
+  },
+  {
+    "id": "KB-09",
+    "title": "Security Incident Reporting",
+    "category": "Security & Incident Response",
+    "description": "Any suspected phishing email, malware, or unauthorized access attempt must be reported immediately to: security@veridian-corp.example. The suspected email or incident should NOT be forwarded to other employees.",
+    "reporting_email": "security@veridian-corp.example",
+    "prohibited_action": "Do NOT forward to other employees",
+    "priority": "Critical",
+    "approval_required": "None (Immediate Escalation)"
+  },
+  {
+    "id": "KB-10",
+    "title": "Work-From-Home Equipment",
+    "category": "Hardware & Remote Work",
+    "description": "Employees working remotely more than 3 days per week are eligible for a one-time home-office equipment allowance for items such as chair or monitor. Requires manager sign-off and Finance processing. IT only handles equipment shipping after approval.",
+    "eligibility_threshold_days_per_week": 3,
+    "allowance_items": ["Chair", "Monitor", "Home-office equipment"],
+    "approval_required": "Manager sign-off and Finance processing required before IT shipping",
+    "it_scope": "Shipping handling post-approval"
+  },
+  {
+    "id": "KB-ASSET-01",
+    "title": "Asset Management Policy Extract",
+    "category": "Hardware & Lifecycle",
+    "description": "All company-issued hardware, including laptops and monitors, follows a standard 4-year refresh cycle from the date of issue. Early replacement outside this cycle requires Finance sign-off in addition to IT approval.",
+    "refresh_cycle_years": 4,
+    "early_replacement_requirement": "Finance sign-off in addition to IT approval",
+    "approval_required": "Finance sign-off & IT approval for early replacement (<4 years)"
+  }
+]
